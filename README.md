@@ -1,1 +1,1 @@
-# SimpleFinance
+# Simple-Finance
