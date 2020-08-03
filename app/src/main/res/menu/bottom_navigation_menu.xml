@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashboard_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/dashboard"
+        android:icon="@drawable/ic_dashboard"
+        />
+    <item
+        android:id="@+id/backlog_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/backlog"
+        android:icon="@drawable/ic_add_trans"
+        />
+    <item
+        android:id="@+id/fin_goal_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/fin_label"
+        android:icon="@drawable/ic_fin_goal"
+        />
+
+    <item
+        android:id="@+id/trans_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/transactions"
+        android:icon="@drawable/ic_graph"
+        />
+
+</menu>

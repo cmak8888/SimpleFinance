@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard_page"
+            android:icon="@drawable/ic_dashboard"
+            android:title="@string/dashboard" />
+        <item
+            android:id="@+id/backlog_page"
+            android:icon="@drawable/ic_add_trans"
+            android:title="@string/backlog" />
+        <item
+            android:id="@+id/fin_goal_page"
+            android:icon="@drawable/ic_fin_goal"
+            android:title="@string/fin_goals" />
+        <item
+            android:id="@+id/financialGoalForm"
+            android:icon="@drawable/ic_new_fin_goal"
+            android:title="@string/add_financial_goal" />
+        <item
+            android:id="@+id/trans_page"
+            android:icon="@drawable/ic_graph"
+            android:title="@string/transactions" />
+        <item
+            android:id="@+id/transactionsFormFragment"
+            android:icon="@drawable/ic_new_trans"
+            android:title="@string/add_transaction" />
+    </group>
+</menu>

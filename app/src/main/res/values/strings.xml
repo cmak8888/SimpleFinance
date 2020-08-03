@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Simple Finance</string>
+    <string name="hello">Hello </string>
+    <string name="fin_goals">Financial Goals</string>
+    <string name="backlog">My Money</string>
+    <string name="transactions">My Transactions</string>
+    <string name="recent_transactions">My Recent Transactions</string>
+    <string name="add_financial_goal">Add a Financial Goal</string>
+    <string name="add_transaction">Add a Previous Transaction</string>
+    <string name="view_all_transactions">View All Transactions</string>
+    <string name="exit">Exit</string>
+    <string name="dashboard">Home</string>
+
+    <string name="trans_label">Transaction</string>
+    <string name="amount_label">Amount</string>
+    <string name="date_label">Date</string>
+    <string name="graph_label">Graph</string>
+
+    <string name="fin_label">Financial Goal</string>
+    <string name="desc">Description</string>
+    <string name="due_date_label">Deadline</string>
+
+    <string name="repeat_label">Repeat:</string>
+    <string name="repeat_daily">DAILY</string>
+    <string name="repeat_weekly">WEEKLY</string>
+    <string name="repeat_monthly">MONTHLY</string>
+    <string name="repeat_annually">ANNUALLY</string>
+
+    <string-array name="repeat_list">
+        <item>NONE</item>
+        <item>DAILY</item>
+        <item>WEEKLY</item>
+        <item>MONTHLY</item>
+        <item>ANNUALLY</item>
+    </string-array>
+
+    <string name="add_the_goal">ADD FINANCIAL GOAL</string>
+    <string name="add_the_transaction">ADD TRANSACTION</string>
+    <string name="DEDLINE_DEDLINE">DEADLINE COMING SOON</string>
+
+    <string name="trans_type">Type</string>
+    <string name="deposit">Deposit</string>
+    <string name="spending">Spending</string>
+    <string name="date_format">MM-DD-YYYY</string>
+
+    <string name="add_money">ADD MONEY</string>
+    <string name="edit">EDIT</string>
+    <string name="update">UPDATE</string>
+    <string name="delete">DELETE</string>
+
+    <string name="notification_channel_name">Simple-Finance</string>
+    <string name="notification_channel_desc">Sends notifications with the most recent goal that\'s going to expire</string>
+    <string name="notification_channel_id">simpleFinanceNotifyId</string>
+    <string name="notification_title">Got a Goal that\'s about to expire</string>
+
+
+    <string name="nav_header_desc">Financio</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

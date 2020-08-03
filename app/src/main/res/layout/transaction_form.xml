@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/trans_label"/>
+    <EditText
+        android:id="@+id/trans_text_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Transaction"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/trans_deposit_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deposit"/>
+        <Button
+            android:id="@+id/trans_spending_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spending"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/date_label"-->
+<!--            />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/trans_date_form"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="end"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="date" />-->
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/amount_label"/>
+    <EditText
+        android:id="@+id/trans_amount_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0.00"
+        android:inputType="numberDecimal"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/trans_add_form"
+        android:text="@string/add_the_transaction"/>
+
+</LinearLayout>

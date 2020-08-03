@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    android:name="androidx.navigation.fragment.NavHostFragment"
+    android:id="@+id/dashboard_nav_host_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="?attr/dividerHorizontal"
+    android:showDividers="middle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20pt"
+                android:text="Welcome!" />
+
+            <LinearLayout
+                android:id="@+id/dash_to_fin_goal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <TextView
+                        android:id="@+id/fin_goal_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_gravity="start"
+                        tools:text="Financial Goal 1"/>
+                    <TextView
+                        android:id="@+id/fin_goal_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_gravity="end"
+                        tools:text="FEB 18 2020"
+                        />
+
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/fin_goal_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    tools:text="descdescdescdescdescdesc"
+                    />
+
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:id="@+id/starting_amount_goal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        tools:text="0"
+                        />
+                    <TextView
+                        android:id="@+id/ending_amount_goal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        tools:text="100"
+                        />
+                </FrameLayout>
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"/>
+
+
+            </LinearLayout>
+        </FrameLayout>
+</FrameLayout>

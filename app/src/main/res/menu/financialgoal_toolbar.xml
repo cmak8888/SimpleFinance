@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/financialGoalForm"
+        android:icon="@drawable/ic_add_new"
+        android:title="New Goal"
+        app:showAsAction="ifRoom|withText"/>
+<!--    <item-->
+<!--        android:id="@+id/signout_button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:title="@string/exit"-->
+<!--        android:icon="@drawable/ic_signout"-->
+<!--        app:showAsAction="ifRoom|withText"-->
+<!--        />-->
+</menu>

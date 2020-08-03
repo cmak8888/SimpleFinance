@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.csci448.FP.simplefinance">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_app_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--  To test one activity, comment the rest of the activities as well as the parent activity name              -->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

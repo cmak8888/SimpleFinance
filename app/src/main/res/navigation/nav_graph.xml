@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    app:startDestination="@id/dashboard_page">
+
+
+    <fragment
+        android:id="@+id/dashboard_page"
+        android:name="com.csci448.FP.simplefinance.ui.dashboard.Dashboard"
+        android:label="Dashboard"
+        tools:layout="@layout/dashboard">
+        <action
+            android:id="@+id/action_dashboard_page_to_backlog"
+            app:destination="@id/backlog_page" />
+        <action
+            android:id="@+id/action_dashboard_page_to_fin_goal_page"
+            app:destination="@id/fin_goal_page" />
+        <action
+            android:id="@+id/action_dashboard_page_to_trans_page"
+            app:destination="@id/trans_page" />
+        <action
+            android:id="@+id/action_dashboard_page_to_financialGoalDetailFragment"
+            app:destination="@id/financialGoalDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/backlog_page"
+        android:name="com.csci448.FP.simplefinance.ui.backlog.Backlog"
+        android:label="Backlog"
+        tools:layout="@layout/backlog">
+        <action
+            android:id="@+id/action_backlog_page_to_dashboard_page"
+            app:destination="@id/dashboard_page" />
+        <action
+            android:id="@+id/action_backlog_page_to_fin_goal_page"
+            app:destination="@id/fin_goal_page" />
+        <action
+            android:id="@+id/action_backlog_page_to_trans_page"
+            app:destination="@id/trans_page" />
+        <action
+            android:id="@+id/action_backlog_page_to_transactionsDetailFragment"
+            app:destination="@id/transactionsDetailFragment" />
+        <action
+            android:id="@+id/action_backlog_page_to_financialGoalDetailFragment"
+            app:destination="@id/financialGoalDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trans_page"
+        android:name="com.csci448.FP.simplefinance.ui.transactions.transactions.TransactionFragment"
+        android:label="TransactionFragment"
+        tools:layout="@layout/view_transactions_list">
+        <action
+            android:id="@+id/action_trans_page_to_dashboard_page"
+            app:destination="@id/dashboard_page" />
+        <action
+            android:id="@+id/action_trans_page_to_fin_goal_page"
+            app:destination="@id/fin_goal_page" />
+        <action
+            android:id="@+id/action_trans_page_to_backlog_page"
+            app:destination="@id/backlog_page" />
+        <action
+            android:id="@+id/action_trans_page_to_transactionsFormFragment"
+            app:destination="@id/transactionsFormFragment" />
+        <action
+            android:id="@+id/action_trans_page_to_transactionsDetailFragment"
+            app:destination="@id/transactionsDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fin_goal_page"
+        android:name="com.csci448.FP.simplefinance.ui.finance_goal.financialgoal_fragment.FinancialGoalFragment"
+        android:label="FinancialGoal"
+        tools:layout="@layout/financial_goal_list">
+        <action
+            android:id="@+id/action_fin_goal_page_to_backlog"
+            app:destination="@id/backlog_page" />
+        <action
+            android:id="@+id/action_fin_goal_page_to_dashboard_page"
+            app:destination="@id/dashboard_page" />
+        <action
+            android:id="@+id/action_fin_goal_page_to_trans_page"
+            app:destination="@id/trans_page" />
+        <action
+            android:id="@+id/action_fin_goal_page_to_financialGoalDetailFragment"
+            app:destination="@id/financialGoalDetailFragment" />
+        <action
+            android:id="@+id/action_fin_goal_page_to_financialGoalFormFragment"
+            app:destination="@id/financialGoalForm" />
+    </fragment>
+    <fragment
+        android:id="@+id/financialGoalDetailFragment"
+        android:name="com.csci448.FP.simplefinance.ui.finance_goal.detail.FinancialGoalDetailFragment"
+        android:label="FinancialGoalDetailFragment"
+        tools:layout="@layout/financialgoal_detail">
+        <argument
+            android:name="goalId"
+            app:argType="java.util.UUID"  />
+        <action
+            android:id="@+id/action_financialGoalDetailFragment_to_fin_goal_page"
+            app:destination="@id/fin_goal_page" />
+    </fragment>
+    <fragment
+        android:id="@id/financialGoalForm"
+        android:name="com.csci448.FP.simplefinance.ui.finance_goal.financialgoal_form.FinancialGoalFormFragment"
+        android:label="FinancialGoalForm"
+        tools:layout="@layout/financialgoal_form">
+        <action
+            android:id="@+id/action_financialGoalForm_to_fin_goal_page"
+            app:destination="@id/fin_goal_page" />
+    </fragment>
+    <fragment
+        android:id="@id/transactionsFormFragment"
+        android:name="com.csci448.FP.simplefinance.ui.transactions.transactions_form.TransactionsFormFragment"
+        android:label="TransactionsFormFragment"
+        tools:layout="@layout/transaction_form">
+        <action
+            android:id="@+id/action_transactionsFormFragment_to_trans_page"
+            app:destination="@id/trans_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionsDetailFragment"
+        android:name="com.csci448.FP.simplefinance.ui.transactions.detail.TransactionsDetailFragment"
+        android:label="transactions_detail"
+        tools:layout="@layout/transactions_detail" >
+        <argument
+            android:name="transactionId"
+            app:argType="java.util.UUID"  />
+        <action
+            android:id="@+id/action_transactionsDetailFragment_to_trans_page"
+            app:destination="@id/trans_page" />
+    </fragment>
+</navigation>
